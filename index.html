@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="media.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!--  Header Large Screen  -->
+    <header class="large" id="header">
+        <nav class="container">
+            <div class="logo">
+                <img width="30" height="30" src="https://img.icons8.com/pastel-glyph/30/1478C9/literature--v2.png"
+                    alt="literature--v2" />
+                <p id="Books">Books</p>
+            </div>
+            <div class="links">
+                <div>
+                    <img id="D_mode" class="mode" src="./images/light-mode-button.png" alt="" width="50px" />
+                </div>
+                <a href="#home">Home</a>
+                <a href="#">Best Seller</a>
+                <div class="Q_links">
+                    <a href=''>Quick Links<i class='fa-solid fa-caret-down'></i></a>
+
+                    <ul class="Q_links_hover">
+                        <li><a href="#">Trending Books</a></li>
+                        <li><a href="#">Best Selling</a></li>
+                        <li><a href="#">Authors</a></li>
+                    </ul>
+                </div>
+
+                <button class="BtnOrder">
+                    <span>Order</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!--  Header Small Screen || Mobile Screen  -->
+    <header class="small">
+        <nav class="container">
+            <div class="logo">
+                <img width="30" height="30" src="https://img.icons8.com/pastel-glyph/30/1478C9/literature--v2.png"
+                    alt="literature--v2" />
+                <p id="Books">Books</p>
+            </div>
+
+            <div class="links">
+                <div class="icons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="Q_links_hover">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#best_seller">Best Seller</a></li>
+                    <li><a href="#top_books">Trending Books</a></li>
+                    <li><a href="#">Authors</a></li>
+                    <li><img id="M_mode" class="mode" src="./images/light-mode-button.png" alt="" width="50px" />
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blur  -->
+    <div id="blur">
+        <div class="form">
+            <section class="orderForm">
+                <div class="title">
+                    <p>Order Your Book</p>
+                    <button class="exit">X</button>
+                </div>
+                <form action="">
+                    <input type="textbook" name="name" placeholder="Name" required />
+                    <input type="email" name="email" placeholder="email" required />
+                    <input type="text" name="address" placeholder="Address" required />
+                    <input type="submit" name="submit" value="Order Now" />
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <section class="svg_section">
+        <div class="home container">
+            <div class="text">
+                <h1>Books<br />can change your life</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam
+                    ea, aspernatur asperiores sed omnis praesentium
+                </p>
+                <div class="search-boxs">
+                    <label for="icons-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                    <input type="text" placeholder="Book Name" id="icons-search" />
+                </div>
+            </div>
+            <div class="picture">
+                <img src="./images/book.jpg" alt="" max-width="350px" class="active" />
+                <div class="picture_countainer">
+                    <img src="./images/book.jpg" alt="" width="80px" />
+                    <img src="./images/book.jpg" alt="" width="80px" />
+                    <img src="./images/book.jpg" alt="" width="80px" />
+                </div>
+            </div>
+
+
+        </div>
+        <svg class="large" preserveAspectRatio="xMidYMid meet" viewBox="0 0 700 550" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#1182C5"
+                d="M38.8,-56.3C42.8,-50.6,33.4,-29.2,37.4,-13.1C41.4,3.1,58.8,13.9,62.3,25.5C65.8,37.1,55.3,49.4,42.6,49.8C29.9,50.3,14.9,38.9,2.5,35.5C-9.9,32,-19.9,36.5,-33.6,36.4C-47.4,36.3,-65,31.6,-73,20.5C-81,9.5,-79.3,-7.8,-73.2,-22.9C-67.1,-38,-56.6,-50.8,-43.7,-53.6C-30.8,-56.4,-15.4,-49.2,1,-50.6C17.4,-52,34.8,-62,38.8,-56.3Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="small" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 550" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#1182C5"
+                d="M38.8,-56.3C42.8,-50.6,33.4,-29.2,37.4,-13.1C41.4,3.1,58.8,13.9,62.3,25.5C65.8,37.1,55.3,49.4,42.6,49.8C29.9,50.3,14.9,38.9,2.5,35.5C-9.9,32,-19.9,36.5,-33.6,36.4C-47.4,36.3,-65,31.6,-73,20.5C-81,9.5,-79.3,-7.8,-73.2,-22.9C-67.1,-38,-56.6,-50.8,-43.7,-53.6C-30.8,-56.4,-15.4,-49.2,1,-50.6C17.4,-52,34.8,-62,38.8,-56.3Z"
+                transform="translate(100 100)" />
+        </svg>
+
+    </section>
+
+    <!-- Best Seller -->
+    <section class="container best_seller mobile_padding_T_B_50 " id="best_seller">
+        <div class="best_text" style="text-align: center">
+            <h1>Best Books</h1>
+        </div>
+        <div class="best_books hidden">
+            <div>
+                <img src="./images/book.jpg" alt="" />
+                <div class="textbook">
+                    <div class="eachBookText">
+                        <div class="rat">
+                            <i class="fa-solid fa-star" style="color: yellow"></i>
+                            <i class="fa-solid fa-star" style="color: yellow"></i>
+                            <i class="fa-solid fa-star" style="color: yellow"></i>
+                            <i class="fa-solid fa-star" style="color: yellow"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2>Flowers</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Asperiores maxime amet commodi
+                        </p>
+                        <button class="BtnOrder">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="./images/book.jpg" alt="" />
+                <div class="textbook">
+                    <div class="eachBookText">
+                        <div class="rat">
+                            <i class="fa-solid fa-star" style="color: yellow"></i>
+                            <i class="fa-solid fa-star" style="color: yellow"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2>Flowers</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Asperiores maxime amet commodi
+                        </p>
+                        <button class="BtnOrder">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="./images/book.jpg" alt="" />
+                <div class="textbook">
+                    <div class="eachBookText">
+                        <div class="rat">
+                            <i class="fa-solid fa-star" style="color: yellow"></i>
+                            <i class="fa-solid fa-star" style="color: yellow"></i>
+
+                            <i class="fa-solid fa-star" style="color: yellow"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2>Flowers</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Asperiores maxime amet commodi
+                        </p>
+                        <button class="BtnOrder">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="moreLink">See More</a>
+    </section>
+
+    <!-- Library -->
+    <section class="container Library mobile_padding_T_B_50">
+        <div class="libImg libImg_hidden">
+            <img src="./images/library.jpg" alt="" id="libImg" />
+        </div>
+        <div class="libtext libtext_hidden">
+            <h3>Library at your fingertips</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                aspernatur voluptate aperiam eos!
+            </p>
+            <!-- bg-violet-100 dark:bg-violet-400 -->
+            <div>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                    class="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100 dark:bg-violet-400" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke-width="2"
+                        d="M7,11 L7,6 C7,3 9,1 12,1 C15,1 17,3 17,6 L17,11 M12,23 C15.8659932,23 19,19.8659932 19,16 C19,12.1340068 15.8659932,9 12,9 C8.13400675,9 5,12.1340068 5,16 C5,19.8659932 8.13400675,23 12,23 Z M12,15 L12,19 M12,16 C12.5522847,16 13,15.5522847 13,15 C13,14.4477153 12.5522847,14 12,14 C11.4477153,14 11,14.4477153 11,15 C11,15.5522847 11.4477153,16 12,16 Z">
+                    </path>
+                </svg>
+                <p>Quality Books</p>
+            </div>
+            <div>
+                <svg style="background-color: #ff7400" stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 24 24"
+                    class="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100 dark:bg-violet-400" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke-width="2"
+                        d="M7,11 L7,6 C7,3 9,1 12,1 C15,1 17,3 17,6 L17,11 M12,23 C15.8659932,23 19,19.8659932 19,16 C19,12.1340068 15.8659932,9 12,9 C8.13400675,9 5,12.1340068 5,16 C5,19.8659932 8.13400675,23 12,23 Z M12,15 L12,19 M12,16 C12.5522847,16 13,15.5522847 13,15 C13,14.4477153 12.5522847,14 12,14 C11.4477153,14 11,14.4477153 11,15 C11,15.5522847 11.4477153,16 12,16 Z">
+                    </path>
+                </svg>
+                <p>Fast Delivery</p>
+            </div>
+            <div>
+                <svg style="background-color: #02ff02" stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 24 24"
+                    class="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100 dark:bg-violet-400" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke-width="2"
+                        d="M7,11 L7,6 C7,3 9,1 12,1 C15,1 17,3 17,6 L17,11 M12,23 C15.8659932,23 19,19.8659932 19,16 C19,12.1340068 15.8659932,9 12,9 C8.13400675,9 5,12.1340068 5,16 C5,19.8659932 8.13400675,23 12,23 Z M12,15 L12,19 M12,16 C12.5522847,16 13,15.5522847 13,15 C13,14.4477153 12.5522847,14 12,14 C11.4477153,14 11,14.4477153 11,15 C11,15.5522847 11.4477153,16 12,16 Z">
+                    </path>
+                </svg>
+                <p>Easy Payment method</p>
+            </div>
+            <div>
+                <svg style="background-color: #ffea00" stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 24 24"
+                    class="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-violet-100 dark:bg-violet-400" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke-width="2"
+                        d="M7,11 L7,6 C7,3 9,1 12,1 C15,1 17,3 17,6 L17,11 M12,23 C15.8659932,23 19,19.8659932 19,16 C19,12.1340068 15.8659932,9 12,9 C8.13400675,9 5,12.1340068 5,16 C5,19.8659932 8.13400675,23 12,23 Z M12,15 L12,19 M12,16 C12.5522847,16 13,15.5522847 13,15 C13,14.4477153 12.5522847,14 12,14 C11.4477153,14 11,14.4477153 11,15 C11,15.5522847 11.4477153,16 12,16 Z">
+                    </path>
+                </svg>
+                <p>Get offers on books</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- yourAppSys-->
+    <section class="container mobile_padding_T_B_50 yourAppSys yourAppSys_hidden">
+        <p>Read Books at your fingertips</p>
+        <div class="btns">
+            <div>
+                <div class="indroid">
+                    <img src="./images/icons8-google-play-48.png" alt="" width="47px">
+                </div>
+                <div>
+                    <span>GET IT ON</span>
+                    <p>Google Play</p>
+                </div>
+            </div>
+            <div>
+                <div class="ios"><i class="fa-brands fa-apple"></i></div>
+                <div>
+                    <span>Download on the</span>
+                    <p>AppStore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Top Books -->
+    <section class="container mobile_padding_T_B_50 top top_hidden" id="top_books">
+        <div class="topText" style="text-align: center">
+            <h1>Top Books</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ducimus
+                iure ipsa placeat!
+            </p>
+        </div>
+        <div style="text-align: center;">
+            <div class="topBooks ">
+
+                <div>
+                    <img src="./images/book.jpg" alt="" min-width="110px" />
+                    <p>Flowers</p>
+                    <span>Someone</span>
+                    <div class="rat">
+                        <i class="fa-solid fa-star" style="color: yellow"></i>
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./images/book.jpg" alt="" />
+                    <p>Flowers</p>
+                    <span>Someone</span>
+                    <div class="rat">
+                        <i class="fa-solid fa-star" style="color: yellow"></i>
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./images/book.jpg" alt="" />
+                    <p>Flowers</p>
+                    <span>Someone</span>
+                    <div class="rat">
+                        <i class="fa-solid fa-star" style="color: yellow"></i>
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./images/book.jpg" alt="" />
+                    <p>Flowers</p>
+                    <span>Someone</span>
+                    <div class="rat">
+                        <i class="fa-solid fa-star" style="color: yellow"></i>
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./images/book.jpg" alt="" />
+                    <p>Flowers</p>
+                    <span>Someone</span>
+                    <div class="rat">
+                        <i class="fa-solid fa-star" style="color: yellow"></i>
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./images/book.jpg" alt="" />
+                    <p>Flowers</p>
+                    <span>Someone</span>
+                    <div class="rat">
+                        <i class="fa-solid fa-star" style="color: yellow"></i>
+                        <p>5</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="#" id="moreLink">See More</a>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="container mobile_padding_T_B_50 top">
+        <div class="testimonialText" style="text-align: center">
+            <h1>Testimonial</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ducimus
+                iure ipsa placeat!
+            </p>
+        </div>
+        <div class="testimonalcontant">
+            <div class="testimonialBG">
+                <img src="./images/personal image.jpg" alt="personal image">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quo autem
+                    necessitatibus.</p>
+                <h2>Satya Narayan1</h2>
+            </div>
+            <div class="testimonialBG">
+                <img src="./images/personal3.jpg" alt="personal image">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quo autem
+                    necessitatibus.</p>
+                <h2>Satya Narayan2</h2>
+            </div>
+            <div class="testimonialBG">
+                <img src="./images/free-images.jpg" alt="personal image">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quo autem
+                    necessitatibus.</p>
+                <h2>Satya Narayan3</h2>
+            </div>
+        </div>
+        <div class="activation">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footerSection container mobile_padding_T_B_50 top " style="background-color: rgb(255 255 255)">
+        <div class="contant">
+            <div class="icon">
+                <div>
+                    <img src="https://img.icons8.com/pastel-glyph/30/1478C9/literature--v2.png" alt="">
+                    <h1>Book Store</h1>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia odit delectus quae sint
+                    praesentium
+                    voluptatem aspernatur ducimus maxime quis.</p>
+                <div>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p>Noida,Uttar Pradesh</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p>+91123456789</p>
+                </div>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+
+            </div>
+            <div>
+                <h2>Important Links </h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#conact">Conact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Links </h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#conact">Conact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Location</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#conact">Conact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copycopyright 2024 All rights reserved || Made with <i class="fa-solid fa-heart"></i> by <a
+                    href="https://github.com/fatmaelfazarey" target="_blank">fatmamohamed</a></p>
+        </div>
+    </footer>
+
+
+    <button id="up" onclick="scrollToTop()"><i class="fa-solid fa-angles-up"></i></button>
+    <script src="index.js"></script>
+</body>
+
+</html>

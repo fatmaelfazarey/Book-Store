@@ -1,0 +1,80 @@
+/* Container */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile_padding_T_B_50 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+/*  Header  */
+@media (max-width: 768px) {
+    .large {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .small {
+        display: none;
+    }
+}
+
+/* Home */
+
+@media (max-width: 768px) {
+    .home .text {
+        max-width: none;
+    }
+
+    .picture {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 40px;
+    }
+
+}
+
+/* yourAppSys */
+@media (max-width: 768px) {
+    .yourAppSys>.btns {
+        gap: 10px;
+    }
+
+    .yourAppSys>.btns>div {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .yourAppSys>.btns>div span {
+        font-size: 9px;
+    }
+
+    .yourAppSys>.btns>div p {
+        font-size: 14px;
+    }
+
+    .yourAppSys>.btns .indroid img {
+        width: 35px;
+    }
+}
+
+/* Top Books */
+@media (max-width: 768px) {
+    .topBooks {
+        gap: 25px;
+    }
+    .topBooks img {
+        width: 100%;
+        width: 110px;
+    }
+}
